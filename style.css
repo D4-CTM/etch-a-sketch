@@ -1,4 +1,4 @@
-body {
+#body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -13,6 +13,7 @@ header,
 footer {
     text-align: center;
     background-color: rgb(236, 106, 59);
+    flex: 0 1 auto;
 }
 
 main {
@@ -21,18 +22,15 @@ main {
     flex: 1 0 auto;
 }
 
-main div {
-    border: 2px solid black;
-}
-
 #colorChooser {
     text-align: center;
     font-size: 20px;
 }
 
 #colorChooser h4{
-    margin-top: 5px;
+    color: rgb(15, 10, 30);
     margin-bottom: 0px;
+    margin-top: 5px;
 }
 
 #dimensions, 
@@ -54,11 +52,53 @@ main div {
     font-size: 18px;
 }
 
-#colors button {
+#colors input {
     width: 40px;
     height: 40px;
 }
 
-#etch-a-sketch {
+#colors button {
+    height: 40px;
+    font-size: 20px;
+}
+
+#case {
+    background-color: brown;
+    border-radius: 5%;
+    overflow: hidden;
+    flex: auto;
+    display: flex;
+
+}
+
+#case button {
+    border-radius: 100%;
+    margin: 15px;
+    height: 6vh;
+    width: 6vh;
+}
+
+#drawingBoard {
+    display: flex;
+    flex-direction: column;
+
+    flex: auto;
+}
+
+#drawingBoard h1,
+#drawingBoard h4 {
+    text-align: center;
+    margin: 0px;
+}
+
+#drawingBoard h4 {
+    margin-bottom: 15px;
+}
+
+#sketchMatrix {
+    border: 2px solid black;
+    overflow: auto;
+    justify-content: center;
+    display: flex;
     flex: auto;
 }

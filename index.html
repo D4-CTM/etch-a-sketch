@@ -6,20 +6,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body id="body">
     <header>
         <h1>Etch-a-sketch</h1>
     </header>
     <main>
-        <div id="dimensions">
+        <div id="dimensions"></div>
+            <div id="drawingBoard">
+                <h1>D4-KETCH</h1>
+                <div id="sketchMatrix">
 
-        </div>
-        <div id="etch-a-sketch">
-        </div>
+                </div>
+                <h4>© Josh</h4>
+            </div>
         <div id="colorChooser">
-            <h4>choose a color</h4>
+            <h4>choose an option</h4>
             <div id = "colors">
-                
+                <button id="resetBTN">reset</button>
+                <input type="color" id="colorPalette">
+                <button id="randomBTN">Rainbow</button>
             </div>
         </div>
     </main>
